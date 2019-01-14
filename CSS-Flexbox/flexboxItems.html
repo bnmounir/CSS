@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Basics</title>
+    <style>
+      body {
+        margin: 0;
+        color: aliceblue;
+        font-size: 100px;
+        text-align: center;
+      }
+      .container {
+        width: auto;
+        height: 300px;
+        padding: 0;
+        display: flex;
+        border: 15px solid violet;
+        flex-direction: row;
+        /* justify-content: space-around; */
+      }
+      .div {
+        flex-basis: 200px;
+      }
+      #div1 {
+        background-color: rgb(255, 140, 0);
+        padding: 10px;
+        /* flex-grow: 2; */
+        /*   grow shrink basis */
+        flex: 1 1 200px;
+      }
+      #div2 {
+        background-color: rgb(222, 122, 0);
+        padding: 10px;
+        /* align-self: flex-start; */
+        order: -1;
+        flex-shrink: 4;
+      }
+      #div3 {
+        background-color: rgb(182, 100, 0);
+        padding: 10px;
+        /* align-self: center; */
+      }
+      #div4 {
+        background-color: rgb(131, 72, 0);
+        padding: 10px;
+      }
+      /* #div5 {
+        background-color: rgb(70, 39, 0);
+        padding: 10px;
+        align-self: baseline;
+        order: 1;
+        flex-basis: 200px;
+      }
+      #div6 {
+        background-color: rgb(46, 23, 0);
+        padding: 10px;
+        flex-basis: 200px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="div1" class="div">1</div>
+      <div id="div2" class="div">2</div>
+      <div id="div3" class="div">3</div>
+      <div id="div4" class="div">4</div>
+      <!-- <div id="div5">5</div>
+      <div id="div6">6</div> -->
+    </div>
+  </body>
+</html>

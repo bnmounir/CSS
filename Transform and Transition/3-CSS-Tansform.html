@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link href="./test.css" rel="/css" /> -->
+    <title>Transform</title>
+    <style>
+      body {
+        font-family: fantasy;
+      }
+      div {
+        width: 75px;
+        height: 75px;
+        background-color: rgb(0, 192, 160);
+        margin: 50px;
+      }
+
+      div.move-right {
+        background-color: rgb(26, 110, 96);
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+      }
+      div.move-down {
+        background-color: rgb(22, 54, 49);
+        -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        transform: translateY(30px);
+      }
+      div:hover {
+        -webkit-transform: translate(20px, 20px);
+        -ms-transform: translate(20px, 20px);
+        transform: translate(20px, 20px);
+      }
+      p {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(192, 0, 150);
+        margin: 20px;
+        -webkit-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+        transform: scale(0.8, 0.8);
+      }
+      .transformed {
+        background-color: rgb(255, 112, 224);
+        -webkit-transform: scaleX(1.2);
+        -ms-transform: scaleX(1.2);
+        transform: scaleX(1.2);
+      }
+      .transformed:hover {
+        background-color: rgb(255, 203, 244);
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        transform: scale(2);
+      }
+      #origin:active {
+        -webkit-transform: scale(3);
+        -ms-transform: scale(3);
+        transform: scale(3);
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+        transform-origin: left top;
+      }
+
+      .rotate {
+        background-color: rgb(88, 133, 255);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: right top;
+        -ms-transform-origin: right top;
+        transform-origin: right top;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Transform</h1>
+    <div class="move-right"></div>
+    <div></div>
+    <div class="move-down"></div>
+
+    <p id="origin">Hello</p>
+    <p class="transformed">Hi</p>
+
+    <div class="rotate">degrees</div>
+  </body>
+</html>

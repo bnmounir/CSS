@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Basics</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+      div {
+        font-size: 200px;
+        padding: 30px;
+        color: aliceblue;
+        width: 300px;
+      }
+      .container {
+        height: 95vh;
+        padding: 0;
+        display: flex;
+        border: 15px solid violet;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: flex-end; */
+        align-content: space-between;
+        justify-content: center;
+        width: auto;
+      }
+      #div1 {
+        background-color: rgb(255, 140, 0);
+        font-size: 50px;
+      }
+      #div2 {
+        background-color: rgb(222, 122, 0);
+        font-size: 400px;
+      }
+      #div3 {
+        background-color: rgb(182, 100, 0);
+        font-size: 120px;
+      }
+      #div4 {
+        background-color: rgb(131, 72, 0);
+      }
+      #div5 {
+        background-color: rgb(70, 39, 0);
+      }
+      #div6 {
+        background-color: rgb(46, 23, 0);
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="div1">1</div>
+      <div id="div2">2</div>
+      <div id="div3">3</div>
+      <div id="div4">4</div>
+      <div id="div5">5</div>
+      <div id="div6">6</div>
+    </div>
+  </body>
+</html>

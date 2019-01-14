@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Keyframe Basic</title>
+    <style>
+      div {
+        animation-name: greetings;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 50ms;
+        animation-iteration-count: infinite;
+      }
+      @import url(https://fonts.googleapis.com/css?family=Lato);
+
+      body {
+        text-align: center;
+        background: #edddd4;
+        padding-top: 50px;
+      }
+      div {
+        display: inline-block;
+        border: 0;
+        background: #57ced7;
+        padding: 15px 30px;
+        color: white;
+        font-family: 'Lato', 'Arial', 'Helvetica', sans-serif;
+        letter-spacing: 1.4px;
+        font-size: 18px;
+        border-radius: 6px;
+        text-shadow: 0 1px 2px #283d3b;
+        animation-name: greetings;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 50ms;
+        animation-iteration-count: infinite;
+      }
+      div:active {
+        animation-play-state: paused;
+      }
+      .reverse {
+        animation-direction: reverse;
+      }
+      .alternate {
+        animation-direction: alternate;
+      }
+      .fill {
+        animation-fill-mode: backwards;
+      }
+      @keyframes greetings {
+        0% {
+          color: rgb(182, 0, 161);
+          font-size: 20px;
+        }
+        20% {
+          color: rgb(123, 0, 119);
+          font-size: 30px;
+        }
+        40% {
+          color: rgb(210, 80, 173);
+          font-size: 50px;
+        }
+        50% {
+          color: rgb(193, 114, 181);
+          font-size: 60px;
+        }
+        60% {
+          color: rgb(0, 74, 74);
+          font-size: 50px;
+        }
+        80% {
+          color: rgb(0, 123, 123);
+          font-size: 30px;
+        }
+        100% {
+          color: rgb(0, 182, 182);
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fill">Hey There!</div>
+    <div class="reverse">Hey There!</div>
+    <div class="reverse">Hey There!</div>
+    <div class="alternate">Hey There!</div>
+    <div class="alternate">Hey There!</div>
+    <div>Hey There!</div>
+  </body>
+</html>

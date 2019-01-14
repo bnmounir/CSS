@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loader</title>
+    <style>
+      body {
+        font-family: Tahoma;
+      }
+      h1 {
+        text-align: center;
+      }
+      .loader {
+        text-align: center;
+        margin: 100px auto;
+        width: 150px;
+        height: 150px;
+        border: 20px solid rgb(102, 233, 128);
+        border-radius: 50%;
+        animation: load 2s linear infinite;
+      }
+      .opposite {
+        margin: 27.8px;
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        border: 10px solid rgb(71, 177, 196);
+        border-radius: 50%;
+        animation: opo 2s linear infinite;
+      }
+      @keyframes load {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          border-top-color: rgb(211, 255, 211);
+          border-bottom-color: rgb(137, 137, 255);
+          border-left-color: rgb(255, 151, 246);
+          border-right-color: rgb(255, 151, 139);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes opo {
+        0% {
+          transform: rotate(-0deg);
+        }
+        50% {
+          transform: rotate(-720deg) scale(2);
+          border-top-color: rgb(185, 255, 185);
+          border-bottom-color: rgb(211, 211, 255);
+          border-left-color: rgb(255, 116, 243);
+          border-right-color: rgb(255, 155, 144);
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(-1440deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Loader</h1>
+    <div class="loader"><div class="opposite"></div></div>
+  </body>
+</html>

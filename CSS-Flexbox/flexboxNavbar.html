@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Navbar Flexbox</title>
+    <style>
+      @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+      @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+      body {
+        background-color: rgb(16, 7, 36);
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        padding: 15px;
+        color: rgb(17, 61, 72);
+      }
+      a:hover {
+        opacity: 0.5;
+      }
+      nav {
+        border-radius: 8px;
+        box-shadow: none;
+        height: auto;
+        font-size: 32px;
+        background-color: rgb(212, 255, 251);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      @media screen and (max-width: 800px) {
+        nav {
+          font-size: 24px;
+          width: 200px;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href=""><i class="fa fa-home"></i>Home</a>
+      <a href=""><i class="fa fa-question"></i>About</a>
+      <a href=""><i class="fa fa-phone"></i>Contact</a>
+      <a href=""><i class="fa fa-paw"></i>Dogs</a>
+    </nav>
+  </body>
+</html>

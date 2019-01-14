@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link href="./test.css" rel="/css" /> -->
+    <title>PseudoClasses</title>
+    <style>
+      body {
+        background-color: rgb(32, 165, 165);
+        font-family: monospace;
+      }
+      h1 {
+        text-align: center;
+        font-weight: 200;
+      }
+      button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        background-color: rgb(255, 241, 193);
+        font-weight: 600;
+        color: rgb(7, 77, 53);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 25px 80px;
+        margin: 0 auto;
+        border-radius: 13px;
+        box-shadow: 6px 6px rgb(255, 210, 48);
+      }
+      button:hover {
+        top: 2px;
+        box-shadow: 3px 3px rgb(255, 210, 48);
+      }
+
+      button:active {
+        top: 4px;
+        box-shadow: 1px 1px rgb(255, 210, 48);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Button Animation</h1>
+    <button>Click me</button>
+  </body>
+</html>
